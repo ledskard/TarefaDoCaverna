@@ -36,13 +36,11 @@ public class AccountController {
 		List<Account> listAccount = services.listCpf();
 		return ResponseEntity.ok(listAccount);
 	}
-	
 	@PostMapping("/acc")
 	public ResponseEntity<String> cadastrar(@RequestBody Account account){
 		services.cadastrar(account);
 		return ResponseEntity.status(HttpStatus.CREATED).body("criado");
 	}
-	
 	@PutMapping("/acc/{cpf}")
 	public ResponseEntity<String> updateUser(@RequestBody Account account, @PathVariable("cpf") String cpf){
 		services.updateUser(cpf, account);

@@ -14,8 +14,6 @@ import com.example.TarefaDoCaverna.Models.Account;
 import com.example.TarefaDoCaverna.Models.Points;
 import com.example.TarefaDoCaverna.Repository.AccountRepository;
 
-
-
 @Service
 public class AccountService {
 	
